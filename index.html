@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lincol Kennedy Jara Culla</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="assets/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="assets/sweetalert2.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio Personal</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">SERVICIOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/lincol.jpg" alt="">
+            </div>
+            <h1>LINCOL JARA</h1>
+            <p></p>
+            <h2>Ingeniero Informatico y de Sistemas</h2>
+            <p></p>
+            <p><span class="typing"></span></p>
+            <div class="redes">
+                <a href="https://www.facebook.com/lincolryuzaki.jara" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="https://wa.link/2oba7h" target="_blank" ><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                <a href="https://www.instagram.com/lincoljarac/?igshid=NTA5ZTk1NTc%3D" target="_blank"><i class="fa-brands fa-instagram fa-lg" target="_blank"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lincol Kennedy Jara Culla.</span> Bachiller en la carrera profesional de Ingeniería
+                Informática y de Sistemas de la Universidad Privada
+                San Pedro, Amplia capacidad de razonamiento
+                lógico, análisis y resolución de problemas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-10-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            900041022
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lincoljara.11@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Pativilca, Jiron Arequipa Mz. 11 Lt. 12 
+                        </li>
+                        <li>
+                            <strong>Licencia</strong>
+                            A-1
+                        </li>
+                        <li>
+                            <strong>Disponibilidad</strong>
+                            <span>INMEDIATA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                       
+                       
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <button>
+                <a href="cv.pdf" class="btn-descarga icon-descarga" download="CV-LINCOLJARA2003" title="descargar cv" style="color:white !important;">
+                    Descargar CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Skills Tecnicos</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL SERVER</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Oracle</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    <div class="skill">
+                        <span>Ensamblaje de PC'S</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes Informaticas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ofimatica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Arquitectura de Software</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Skills Profesionales</h3>
+                    <div class="skill">
+                        <span>Trabajar en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolver problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tomar deciciones</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación al cambio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de comunicar eficazmente</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tolerancia a la presión</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Orientación a resultados</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudios Nivel Primaria</h4>
+                        <span class="casa">Institución Educativa 20505, Pativilca</span>
+                        <span class="fecha">2004 - 2009</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios Nivel Secundaria</h4>
+                        <span class="casa">Libertador Simón Bolívar, Pativilca</span>
+                        <span class="fecha">2010 - 2014</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios Nivel Universitario</h4>
+                        <span class="casa">Universidad Privada San Pedro, Huacho</span>
+                        <span class="fecha">2016 - 2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Cursos y diplomados</h3>
+                    <div class="item izq">
+                        <h4>Ensamblaje de PC’S </h4>
+                        <span class="casa">Institución de estudios superiores - UNIMASTER</span>
+                        <span class="fecha">2019</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación con Java Script y HTML</h4>
+                        <span class="casa">Institución de estudios superiores - UNIMASTER</span>
+                        <span class="fecha">2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Power BI</h4>
+                        <span class="casa">Cámara Latinoamericana de Comercio</span>
+                        <span class="fecha">2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ofimática Microsoft Office Professional 2019</h4>
+                        <span class="casa">Cámara Latinoamericana de Comercio</span>
+                        <span class="fecha">2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asistente en el área de
+                            ventas e inventario</h4>
+                        <span class="casa">Nutri Service</span>
+                        <span class="fecha">2016 - 2019</span>
+                        <p>Registrar los ingresos y egresos del negocio en el
+                            sistema. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Practicante Pre Profesional Programador</h4>
+                        <span class="casa">Ingelc Perú</span>
+                        <span class="fecha">2019-2020</span>
+                        <p>Desarrollo de un software de inventario, utilizando
+                            C#, MySQL, RUP, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Coordinador Soporte Tecnico</h4>
+                        <span class="casa">Colegio San Ignacio de Loyola</span>
+                        <span class="fecha">2022</span>
+                        <p>Mantener en buenas condiciones los equipos
+                            tecnológicos y que le den el uso correcto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico en Sistemas</h4>
+                        <span class="casa">Sand & Sea</span>
+                        <span class="fecha">2022</span>
+                        <p>Instalación y configuración de cámaras de video
+                            vigilancia, sensores, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador Web</h4>
+                        <span class="casa">Universidad Nacional de Barranca</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollo de un software web para el área de OTI,
+                            utilizando PHP, HTML, JAVASCRIPT, MySQL, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>SERVICIOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/programador.jpg" alt="">
+                    <div id="uno" class="overlay">
+                        <h3>Programador</h3>
+                        <p>Web, escritorio, etc</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/33.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Administrador base de datos</h3>
+                        <p>SQLSERVER, Oracle, MySQL</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Administrador Redes Informaticas</h3>
+                        <p>Diseño y asegurar el funcionamiento de la red </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Soporte Informatico</h3>
+                        <p>Hardware</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/55.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Arquitecto  de Software</h3>
+                        <p>Diseñar arquitectura y cada componente del sistema</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tecnico Telecomunicaciones</h3>
+                        <p>Instalacion de camaras, sensores, etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                
+                <div class="col">
+                    <input id="nombre" type="text" placeholder="Tú Nombre">
+                    <input id="fono" type="text" placeholder="Número telefónico">
+                    <input id="correo" type="text" placeholder="Dirección de correo">
+                    <input id="tema" type="text" placeholder="Tema">
+                    <textarea id="mensaje" itemid="" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button onclick="mensaje()">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            
+                <!-- Mapa -->
+                <div class="col">
+                    <a href="https://www.google.com/maps/@-10.6958479,-77.775061,19.75z" target="_blank">
+                    <img src="img/p.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pativilca, Jiron Arequipa Mz.11 Lt. 12
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/lincolryuzaki.jara" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+            <a href="https://wa.link/2oba7h" target="_blank" ><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            <a href="https://www.instagram.com/lincoljarac/?igshid=NTA5ZTk1NTc%3D" target="_blank"><i class="fa-brands fa-instagram fa-lg" target="_blank"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
